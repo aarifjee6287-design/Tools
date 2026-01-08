@@ -121,7 +121,19 @@
         .dashboard-container {
             display: grid;
             grid-template-columns: 300px 1fr;
-            gap: 25px;
+            gap: 25px;/* Make grid items clickable */
+.dashboard-container .clickable-item {
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.dashboard-container .clickable-item:hover {
+    background-color: #f3f4f6;
+    border-color: #3b82f6;
+        }
         }
         
         /* Sidebar */
@@ -254,7 +266,11 @@
         .search-container {
             position: relative;
             margin-bottom: 30px;
-        }
+        }<a href="/search-page">
+    <div class="search-container">
+        Click here to search
+    </div>
+</a>
         
         .search-box {
             display: flex;
